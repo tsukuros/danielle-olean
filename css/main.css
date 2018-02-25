@@ -1,0 +1,61 @@
+/* Hero section */
+#hero {
+  height: 700px;
+  min-height: 90vh;
+}
+.img-cover {
+  background-size: cover;
+  background-position: center center;
+}
+.navbar-nav .nav-item .nav-link {
+  font-size: 20px;
+  color: #fff;
+  font-family: 'ProximaNova-Regular', sans-serif;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.cta-form {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: solid 1px #d4d4d4;
+  padding: 50px;
+}
+#hero h1 {
+  color: #fff;
+  font-size: 60px;
+  font-family: 'LucidaGrande', sans-serif;
+  font-weight: 600;
+}
+/* End Hero section */
+/* About Me section */
+.subheading-underline {
+  width: 40px;
+  height: 3px;
+  background-color: #f5f5f5;
+}
+.section-subtitle {
+  font-size: 25px;
+}
+/* End About Me section */
+.text-proxima {
+  font-family: 'ProximaNova', sans-serif;
+}
+.text-lucida {
+  font-family: 'Lucida Grande', sans-serif;
+}
+.text-20 {
+  font-size: 20px;
+}
+.text-18 {
+  font-size: 18px;
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-subheading {
+  font-size: 40px;
+}
+.flex-no-shrink {
+  flex-shrink: 0;
+}

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Lucida Grande';
+  src: url('Lucida Grande.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url('ProximaNova-Reg.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'ProximaNova-Semibold';
+  src: url('ProximaNova-Sbold.ttf') format('truetype');
+}
