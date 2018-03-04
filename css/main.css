@@ -1,4 +1,7 @@
 /* Hero section */
+body {
+  font-family: 'ProximaNova-Regular', sans-serif;
+}
 #hero {
   height: 700px;
   min-height: 90vh;
@@ -59,3 +62,45 @@
 .flex-no-shrink {
   flex-shrink: 0;
 }
+
+/* Testimonials section */
+#testimonials {
+  background-color: rgba(80, 204, 200, 0.05);
+}
+#testimonials .carousel:before {
+  content: url(../images/quotes.svg);
+  position: absolute;
+  top: -30px;
+  left: 10px;
+  z-index: 1;
+}
+#testimonials .carousel-control-prev-icon,
+#testimonials .carousel-control-next-icon {
+  width: auto;
+  height: auto;
+}
+#testimonials .carousel-control-next-icon img {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+#testimonials .testimonial-text {
+  font-family: 'ProximaNova-Regular', sans-serif;
+  font-size: 25px;
+  color: #333333;
+}
+#testimonials .carousel-indicators {
+  bottom: -120px;
+}
+#testimonials .carousel-indicators li {
+  height: auto;
+  text-indent: initial;
+  width: auto;
+}
+#testimonials .carousel-indicators li.active {
+  border: 5px solid #e7bfc1;
+  border-radius: 50%;
+}
+/* End Testimonials section */
