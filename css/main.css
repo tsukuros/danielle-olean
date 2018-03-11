@@ -110,3 +110,30 @@ body {
   min-height: 300px;
 }
 /* End Testimonials section */
+
+/* ======================================
+Resources section
+====================================== */
+#resources h4 a {
+  color: #ef5f30;
+  text-decoration: underline;
+}
+#resources h4 a:hover {
+  text-decoration: none;
+}
+#resources .more-resources-btn {
+  border-radius: 25px;
+  border: 2px solid #ef5f30;
+  color: #ef5f30;
+  max-width: 300px;
+}
+#resources .more-resources-btn:hover {
+  color: #ffffff;
+  background-color: #ef5f30;
+}
+#resources .more-resources-btn svg path {
+  fill: #EF5F30;
+}
+#resources .more-resources-btn:hover svg path {
+  fill: #ffffff;
+}
