@@ -59,14 +59,16 @@ body {
 .text-subheading {
   font-size: 40px;
 }
+.text-orange {
+  color: #ef5f30;
+}
 .flex-no-shrink {
   flex-shrink: 0;
 }
-
-/* Testimonials section */
-#testimonials {
+.bg-blue {
   background-color: rgba(80, 204, 200, 0.05);
 }
+/* Testimonials section */
 #testimonials .carousel:before {
   content: url(../images/quotes.svg);
   position: absolute;
@@ -121,19 +123,47 @@ Resources section
 #resources h4 a:hover {
   text-decoration: none;
 }
-#resources .more-resources-btn {
+section .read-more-btn {
   border-radius: 25px;
   border: 2px solid #ef5f30;
   color: #ef5f30;
   max-width: 300px;
 }
-#resources .more-resources-btn:hover {
+section .read-more-btn:hover {
   color: #ffffff;
   background-color: #ef5f30;
+  border-color: #EF5F30;
 }
-#resources .more-resources-btn svg path {
+section .read-more-btn svg {
+  transition: all 0.2s ease;
+}
+section .read-more-btn:hover svg {
+  transform: translate3d(10px,0,0);
+}
+section .read-more-btn svg path {
   fill: #EF5F30;
 }
-#resources .more-resources-btn:hover svg path {
+section .read-more-btn:hover svg path {
   fill: #ffffff;
+}
+/* ======================================
+Blog section
+====================================== */
+#blog .img-container {
+  overflow: hidden;
+  cursor: pointer;
+}
+#blog .img-container:hover .image-caption {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+#blog .image-caption {
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  bottom: -10px;
+  min-height: 110px;
+  opacity: 0;
+  transition: all .25s ease-in-out;
 }
