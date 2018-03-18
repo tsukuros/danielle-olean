@@ -1,7 +1,55 @@
 /* Hero section */
 body {
-  font-family: 'ProximaNova-Regular', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
+/* ======================================
+* Header Navigation
+====================================== */
+.navbar-nav .nav-item .nav-link {
+  position: relative;
+  font-size: 20px;
+  color: #fff;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.site-header {
+  transition: all 0.2s ease-in-out;
+}
+.site-header .logo-black {
+  display: none;
+}
+.site-header.scrolling {
+  background-color: #fff;
+  box-shadow: 0 0 10px 2px rgba(0,0,0, 0.1);
+}
+.site-header.scrolling .navbar-nav .nav-item .nav-link {
+  color: initial;
+}
+.site-header.scrolling .logo-inverse {
+  display: none;
+}
+.site-header.scrolling .logo-black {
+  display: block;
+}
+.navbar-nav .nav-item .nav-link:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  transition: all 0.25s ease;
+  background-color: #ef5f30;
+}
+.navbar-nav .nav-item .nav-link.active:before,
+.navbar-nav .nav-item .nav-link:hover:before {
+  width: 100%;
+}
+/* ======================================
+* End Header Navigation
+====================================== */
 #hero {
   height: 700px;
   min-height: 90vh;
@@ -10,24 +58,20 @@ body {
   background-size: cover;
   background-position: center center;
 }
-.navbar-nav .nav-item .nav-link {
-  font-size: 20px;
-  color: #fff;
-  font-family: 'ProximaNova-Regular', sans-serif;
-}
-.navbar-nav .nav-item .nav-link:hover {
-  color: #fff;
-  text-decoration: underline;
-}
 .cta-form {
   background-color: rgba(255, 255, 255, 0.8);
   border: solid 1px #d4d4d4;
   padding: 50px;
 }
+.btn-cta {
+  color: #fff;
+  border-radius: 25px;
+  background-color: #ef5f30;
+  border-color: #ef5f30;
+}
 #hero h1 {
   color: #fff;
   font-size: 60px;
-  font-family: 'LucidaGrande', sans-serif;
   font-weight: 600;
 }
 /* End Hero section */
@@ -41,11 +85,12 @@ body {
   font-size: 25px;
 }
 /* End About Me section */
-.text-proxima {
-  font-family: 'ProximaNova', sans-serif;
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
-.text-lucida {
-  font-family: 'Lucida Grande', sans-serif;
+.text-18 {
+  font-size: 18px;
 }
 .text-20 {
   font-size: 20px;
@@ -97,7 +142,6 @@ body {
   transform: rotate(180deg);
 }
 #testimonials .testimonial-text {
-  font-family: 'ProximaNova-Regular', sans-serif;
   font-size: 25px;
   color: #333333;
 }
@@ -115,9 +159,11 @@ body {
 #testimonials .carousel-indicators li.active {
   border-color: #e7bfc1;
 }
-#testimonials .carousel-item-content {
-  max-width: 70%;
-  min-height: 300px;
+@media (min-width: 575px) {
+  #testimonials .carousel-item-content {
+    max-width: 70%;
+    min-height: 300px;
+  }
 }
 /* End Testimonials section */
 
