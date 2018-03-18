@@ -17,9 +17,6 @@ body {
 .site-header {
   transition: all 0.2s ease-in-out;
 }
-.site-header .logo-black {
-  display: none;
-}
 .site-header.scrolling {
   background-color: #fff;
   box-shadow: 0 0 10px 2px rgba(0,0,0, 0.1);
@@ -27,11 +24,24 @@ body {
 .site-header.scrolling .navbar-nav .nav-item .nav-link {
   color: initial;
 }
-.site-header.scrolling .logo-inverse {
-  display: none;
+@media (max-width: 574px) {
+  .logo-desktop {
+    display: none;
+  }
 }
-.site-header.scrolling .logo-black {
-  display: block;
+@media (min-width: 575px) {
+  .site-header .logo-black {
+    display: none;
+  }
+  .site-header.scrolling .logo-inverse {
+    display: none;
+  }
+  .site-header.scrolling .logo-black {
+    display: block;
+  }
+}
+.site-header.scrolling .logo-mobile path {
+  fill: #000;
 }
 .navbar-nav .nav-item .nav-link:before {
   content: '';
@@ -46,6 +56,9 @@ body {
 .navbar-nav .nav-item .nav-link.active:before,
 .navbar-nav .nav-item .nav-link:hover:before {
   width: 100%;
+}
+.logo-mobile path {
+  fill: #fff;
 }
 /* ======================================
 * End Header Navigation
@@ -83,6 +96,11 @@ body {
 }
 .section-subtitle {
   font-size: 25px;
+}
+@media (min-width: 575px) {
+  .chart-image-container {
+    min-width: 300px;
+  }
 }
 /* End About Me section */
 .section {
