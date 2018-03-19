@@ -81,6 +81,13 @@ body {
   border-radius: 25px;
   background-color: #ef5f30;
   border-color: #ef5f30;
+  transition: all 0.2s ease-in-out;
+}
+.btn-cta:hover,
+.btn-cta:focus {
+  background-color: #da4f22;
+  border-color: #da4f22;
+  color: #fff;
 }
 #hero h1 {
   color: #fff;
