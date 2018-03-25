@@ -12,7 +12,13 @@
     <title>Danielle Olean</title>
   </head>
   <body class="position-relative" data-spy="scroll" data-target="#header-nav">
-    <section id="hero" class="img-cover" style="background-image: url(images/bg-hero.png);">
+    <section
+      id="hero"
+      class="img-cover"
+      style="background-image: url(images/bg-hero.png);"
+      data-type="background"
+      data-speed="10"
+    >
       <div class="container h-100 pt-5">
         <header class="site-header fixed-top">
           <nav class="container navbar navbar-light justify-content-center">
@@ -35,6 +41,9 @@
               <li class="nav-item px-3">
                 <a class="nav-link" href="#blog">Blog</a>
               </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
             </ul>
           </nav>
         </header>
@@ -45,7 +54,7 @@
           <form class="cta-form mb-5" style="max-width: 350px;" novalidate>
             <p class="text-18">FREE Gantt Chart Template</p>
             <div class="mb-4">
-              <input type="email" class="form-control form-control-lg" placeholder="name@example.com" autofocus />
+              <input type="email" class="form-control form-control-lg" placeholder="name@example.com" />
               <p class="email-error-message text-danger mb-0 d-none">Please enter valid email</p>
             </div>
 
@@ -74,11 +83,11 @@
         <div class="ml-lg-5 mb-5">
           <h3 class="mb-4 section-subtitle text-bold ">Who am I?</h3>
           <p class="">
-            Hi, I'm Danielle. I am a technical product manager specializing in <strong>digital products</strong> and <strong>e-commerce</strong>.
+            Hi, I'm Danielle. I am a scrum product owner and UX expert specializing in <strong>digital products</strong> and <strong>e-commerce</strong>.
             <br /><br />
-            I have five years' experience in technical startup and have helped <strong>establish</strong> and <strong>grow</strong> companies <strong>from seed funding to IPOs</strong>.
+            I have five years' experience in technical startups
             <br /><br />
-            Coming from a non-technical background in the highly competitive millennial age, I hope to <strong>help</strong> and <strong>inspire</strong> others who want to <strong>gain technical expertise</strong> but do not know where to start.
+            Being a millennial and coming from a non-technical background in a highly competitive landscape, I hope to <strong>help</strong> and <strong>inspire</strong> others who want to <strong>gain technical expertise</strong> but are unsure where to start.
           </p>
         </div>
       </div>
@@ -90,11 +99,16 @@
         <div class="mr-lg-5 mb-5">
           <h3 class="mb-4 section-subtitle text-bold ">How am I different?</h3>
           <p class=" text-18">
-            My greatest asset is my ability to enthusiastically take on any challenge to <strong>produce impactful results</strong>.
+            My greatest asset is my ability to enthusiastically take on any problem to <strong>produce impactful results</strong>.
             <br /><br />
-            I am a champion of being the voice of the consumer, imagining every possible angle of an approach to a product, gathering customer feedback and pain points, and <strong>executing on ideas from conception to QA</strong>.
+            I champion being the voice of the end user, through leveraging Jobs Theory, I use qualitative and quantitative analysis to determine the drivers of user behavior which allows me to identify opportuntities for product enhancements that benefit our users most
             <br /><br />
             I enjoy throwing myself into the unknown, the messiest of problems, making sense and order of it to <strong>optimize and drive business growth</strong>.
+            Through several years in various tech start ups I've gained multi-faceted experience in different roles from UX and design, to data analysis, to engineer management and acting as scrum master, to leadership and human resources.
+            <br /><br />
+            I have learned how to deal with investors, weighing out the benefits of third party vendors, finding developers and general talent in a competitive landscape with scarce funding, and working cross functionally with growing departments to drive company culture and efficient business processes.
+            <br /><br />
+            This site is to share both my experiences for upcoming and current product managers, for anyone who wants to break into a technical role, and for those who are looking for product management consulting services for their own company.
           </p>
         </div>
       </div>
@@ -102,31 +116,48 @@
       <div class="mx-auto" style="max-width: 700px;">
         <h3 class="mb-4 section-subtitle text-bold text-center">What are my accomplishments?</h3>
         <ul class=" text-18 list-unstyled">
-            <li class="mb-4 d-flex align-items-center">
-              <img class="img-fluid mr-3" src="images/checkmark.svg" alt="Checkmark Icon" />
-              <p>
-                Implementing an agile engineering approach and roadmap resulting in <strong>increased company productivity 300% and $5,000 overall net revenue</strong> in preparation for Series A fundraising round
-              </p>
-            </li>
-            <li class="mb-4 d-flex align-items-center">
-              <img class="img-fluid mr-3" src="images/checkmark.svg" alt="Checkmark Icon" />
-              <p>
-                Solving a nuanced inventory problem through algorithm enhancements, coupled with building an external facing tool to create an <strong>additional $50K in monthly recurring revenue and ~10K additional purchasable products per month</strong> for consumers on site.
-              </p>
-            </li>
-            <li class="mb-4 d-flex align-items-center">
-              <img class="img-fluid mr-3" src="images/checkmark.svg" alt="Checkmark Icon" />
-              <p>
-                Managing the lifecycle of an operational tool, cutting out customer service’s role in the process and <strong>saving over $200K in employment expenses</strong>.
-              </p>
-            </li>
-            <li class="mb-4 d-flex align-items-center">
-              <img class="img-fluid mr-3" src="images/checkmark.svg" alt="Checkmark Icon" />
-              <p>
-                Ideating, wire-framing and managing the entire product development of a brand-new tool to manage the Credit Recovery process <strong>generating over $1MM in recovered losses</strong> in the first quarter post-launch.
-              </p>
-            </li>
-            </ul>
+          <li class="mb-4 d-flex align-items-center">
+            <img class="img-fluid mr-3" src="images/checkmark.svg" alt="Checkmark Icon" />
+            <div>
+              <strong>Problem</strong>: Development was slow and disorganized, deadlines were never hit and scope creep was unmanageable.
+              <br />
+              <strong>Solution</strong>: Implementing an agile engineering approach and Gantt chart roadmap with defined KPIs
+              <br />
+              <strong>Results</strong>: Increased company productivity and engineering velocity 300% and $5,000 overall net revenue in preparation for Series A fundraising round
+            </div>
+          </li>
+
+          <li class="mb-4 d-flex align-items-center">
+            <img class="img-fluid mr-3" src="images/checkmark.svg" alt="Checkmark Icon" />
+            <div>
+              <strong>Problem</strong>: 60% of inventory in our database was not listed for sale on site because we could not identify the UPC.
+              <br />
+              <strong>Solution</strong>: Analyzed all unclassified inventory items and identified ways to improve our algorithm (ie. increasing the threshold of the Levenshtein distance algorithm, creating a fuzzy match off of name and other item attributes, mapping most common shorthand terms to its complete word), coupled with building an external facing tool which replaced all free text inputs with pre-determined drop downs to standardize the way inventory was being inputted.
+              <br />
+              <strong>Results</strong>: Created an additional $50K in monthly recurring revenue and ~10K additional purchasable products per month for consumers on site.
+            </div>
+          </li>
+          <li class="mb-4 d-flex align-items-center">
+            <img class="img-fluid mr-3" src="images/checkmark.svg" alt="Checkmark Icon" />
+            <div>
+              <strong>Problem</strong>: Order substitutions accounted for 20% of customer successes calls. At our rate of growth and substitution requests, we needed to hire 2-3 additional customer success representatives to manage the volume.
+              <br />
+              <strong>Solution</strong>: Built an external facing operational tool allowing suppliers to completely self-service the substitution process and notify customers, cutting out customer service’s role in the process
+              <br />
+              <strong>Results</strong>: Saved over $200K in employment expenses.
+            </div>
+          </li>
+          <li class="mb-4 d-flex align-items-center">
+            <img class="img-fluid mr-3" src="images/checkmark.svg" alt="Checkmark Icon" />
+            <div>
+              <strong>Problem</strong>: Credit recovery team could only leverage email to demand credit payments resulting in 60% in unrecovered credits.
+              <br />
+              <strong>Solution</strong>: Built an external facing tool to manage the Credit Recovery process; bringing the process into a system they used daily for order processing, automating notifications to our clients, a disputing process, and credit retrieval from their account.
+              <br />
+              <strong>Results</strong>: Recovered over $1MM in losses in the first quarter post-launch.
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -152,27 +183,46 @@
                 alt="Person 2"
               />
             </li>
+            <li style="max-width: 90px;" data-target="#testimonials-carousel" data-slide-to="2">
+              <img
+                class="d-block img-fluid rounded-circle"
+                src="images/vlada-boiko.jpg"
+                srcset="images/vlada-boiko@2x.jpg 2x"
+                alt="Person 2"
+              />
+            </li>
           </ol>
 
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="carousel-item-content mx-auto d-flex flex-column justify-content-center">
-                <p class="testimonial-text">I have a million dollar business because I listened to Danielle. The process she put in place works like a well-oiled money-making machine.</p>
+                <p class="testimonial-text">What impresses me most about Danielle is her positive attitude, willingness to roll up her sleeves, and her resourcefulness. For example, on several occasions, Danielle took on projects that involved technology with which she wasn’t particularly familiar. She not only figured out how to be efficient with these tools, she taught herself to modify the technology so that the rest of the company could leverage them to the best of our ability.</p>
                 <div class="d-flex justify-content-end">
                   <div>
-                    <p class="person-name text-proxima text-20 mb-1">Oleks Tsukur</p>
-                    <p class="person-title text-proxima mb-0">Full-Stack Developer</p>
+                    <p class="person-name text-proxima text-20 mb-1">Amy</p>
+                    <p class="person-title text-proxima mb-0">Product Management at Drizly</p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="carousel-item-content mx-auto d-flex flex-column justify-content-center">
-                <p class="testimonial-text">My most remarkable work was created when I got in the groove Danielle has created.</p>
+                <p class="testimonial-text">From the start, Danielle demonstrated that she is a ‘go-getter’ who is able to take an idea and see it through to fruition... Danielle’s upbeat attitude and drive to continue to learn and grow ensured that she was a valuable asset to a team that continued to grow as the business expanded.</p>
                 <div class="d-flex justify-content-end">
                   <div>
-                    <p class="person-name text-proxima text-20 mb-1">Vlada Boiko</p>
-                    <p class="person-title text-proxima mb-0">UI/UX Designer</p>
+                    <p class="person-name text-proxima text-20 mb-1">Zach</p>
+                    <p class="person-title text-proxima mb-0">Operations Process Improvement at Wayfair</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-item-content mx-auto d-flex flex-column justify-content-center">
+                <p class="testimonial-text">Most important is her ability to interact with all types of people... With her enthusiasm and hard work, she built a very successful new market for our company.</p>
+                <div class="d-flex justify-content-end">
+                  <div>
+                    <p class="person-name text-proxima text-20 mb-1">Jen</p>
+                    <p class="person-title text-proxima mb-0">Campus Special</p>
                   </div>
                 </div>
               </div>
@@ -199,54 +249,62 @@
     <section id="resources" class="section">
       <div class="container">
         <h2 class="text-center text-bold text-lucida text-subheading mb-5">Resources</h2>
-
-        <div class="d-flex flex-wrap flex-md-nowrap">
-          <div class="mb-4 pl-sm-3 pr-sm-3">
-            <h4 class=" text-20 mb-3">
-              <a href="#">Resource #1</a>
+        <div class="row">
+          <div class="col-12 col-md-4 mb-4">
+            <h4 class="text-20 mb-3">
+              <a target="_blank" href="https://www.productschool.com/product-management-events/">Product School - Events</a>
             </h4>
-            <p>This is a greate resource to get you started on project managment and stuff. This is a greate resource to get you started on project managment and stuff.</p>
+            <p>Variety of events featuring speakers from well-known tech companies sharing their experiences and advice on product management.</p>
           </div>
-          <div class="mb-4 pl-sm-3 pr-sm-3">
-            <h4 class=" text-20 mb-3">
-              <a href="#">Resource #2</a>
+          <div class="col-12 col-md-4 mb-4">
+            <h4 class="text-20 mb-3">
+              <a target="_blank" href="https://www.amazon.com/Jobs-Be-Done-Customer-Centered-Innovation/dp/0814438032">Jobs to Be Done (Book)</a>
             </h4>
-            <p>This is a greate resource to get you started on project managment and stuff. This is a greate resource to get you started on project managment and stuff.</p>
+            <p>An introduction to Jobs Theory, a customer centered approach to innovation that focuses on "determining the drivers of customer behavior--those functional and emotional goals that people want to achieve."</p>
           </div>
-          <div class="mb-4 pl-sm-3 pr-sm-3">
-            <h4 class=" text-20 mb-3">
-              <a href="#">Resource #3</a>
+          <div class="col-12 col-md-4 mb-4">
+            <h4 class="text-20 mb-3">
+              <a target="_blank" href="https://www.youtube.com/channel/UCG2uDvujf-61Rsq_f7j0oGw">Angela Druckman Youtube Channel</a>
             </h4>
-            <p>This is a greate resource to get you started on project managment and stuff. This is a greate resource to get you started on project managment and stuff.</p>
+            <p>Quick videos on tips for improving efficiency of agile and scrum meetings and processes.</p>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <h4 class="text-20 mb-3">
+              <a target="_blank" href="https://www.amazon.com/How-Win-Friends-Influence-People/dp/0671027034">How to Win Friends and Influence People (Book)</a>
+            </h4>
+            <p>As a product manager, you are the liaison of several different departments and competing priorities. Let this book help you smoothly navigate and influence these relationships through leadership and facilitating agreements in order to maximize your company's productivity.</p>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <h4 class="text-20 mb-3">
+              <a target="_blank" href="https://www.mountaingoatsoftware.com/agile">Mountain Goat Software Agile Blog</a>
+            </h4>
+            <p>A blog featuring tips, explanations and resources on adapting agile to your company's needs.</p>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <h4 class="text-20 mb-3">
+              <a target="_blank" href="https://www.atlassian.com/team-playbook">Atlassian Team Playbook</a>
+            </h4>
+            <p>Recipe-like instructions on improving team productivity, overall health, and meeting effectiveness.</p>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <h4 class="text-20 mb-3">
+              <a target="_blank" href="https://en.wikipedia.org/wiki/Phase-gate_process">Phase Gate Process</a>
+            </h4>
+            <p>I like to adapt this proces to agile for how I convey the phases of a project to the business-side. We define projects we discuss in our stakeholder meetings by these phases, each phase denotes the action to be taken in the meeting. For example, items in Phase 0 mean the discussion is focused around cost benefits, risks, market-share, and competittion and the guiding question is: Should we do this project?</p>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <h4 class="text-20 mb-3">
+              <a target="_blank" href="http://agilemanifesto.org/">Agile Manifesto</a>
+            </h4>
+            <p>Theory of software development that guides many young technological startups, agile focuses on the ability to adapt to changing situations and iterate on software development and process improvement.</p>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <h4 class="text-20 mb-3">
+              <a target="_blank" href="https://www.owasp.org/index.php/Main_Page">Open Web Application Security Project (OWASP)</a>
+            </h4>
+            <p>The Open Web Application Security Project (OWASP) is a 501(c)(3) worldwide not-for-profit charitable organization focused on improving the security of software. As a product manager, you will likely be writing features that has security impllications and it's important that you're aware and across best practices for this.</p>
           </div>
         </div>
-        <div class="d-flex flex-wrap flex-md-nowrap mb-5">
-          <div class="mb-4 pl-sm-3 pr-sm-3">
-            <h4 class=" text-20 mb-3">
-              <a href="#">Resource #4</a>
-            </h4>
-            <p>This is a greate resource to get you started on project managment and stuff. This is a greate resource to get you started on project managment and stuff.</p>
-          </div>
-          <div class="mb-4 pl-sm-3 pr-sm-3">
-            <h4 class=" text-20 mb-3">
-              <a href="#">Resource #5</a>
-            </h4>
-            <p>This is a greate resource to get you started on project managment and stuff. This is a greate resource to get you started on project managment and stuff.</p>
-          </div>
-          <div class="mb-4 pl-sm-3 pr-sm-3">
-            <h4 class=" text-20 mb-3">
-              <a href="#">Resource #6</a>
-            </h4>
-            <p>This is a greate resource to get you started on project managment and stuff. This is a greate resource to get you started on project managment and stuff.</p>
-          </div>
-        </div>
-
-        <a href="" class="btn btn-lg btn-outline-danger mx-auto read-more-btn btn-block">
-          <span class="mr-1">Get More Resources</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="12" viewBox="0 0 19 12">
-            <path d="M19 6l-7.125-6v3.6C6.531 3.6 2.375 4.8 0 10.8c3.563-3 7.125-3.6 11.875-2.4V12L19 6z"/>
-          </svg>
-        </a>
       </div>
     </section>
 
@@ -257,19 +315,19 @@
         <div class="d-inline-flex flex-column flex-md-row mb-5">
           <a href="" class="mb-4 position-relative img-container ml-3 mr-3">
             <img class="img-fluid" src="images/blog-1.png" alt="Blog Post Feature Image 1">
-            <p class="p-4 image-caption text-left position-absolute mb-0 w-100 font-weight-bold text-20 text-proxima text-orange">Hypotherapy For Motivation Getting The Drive Back</p>
+            <p class="p-4 image-caption text-left position-absolute mb-0 w-100 font-weight-normal text-20 text-proxima text-orange">Why Internships Are Your Key to Post-Grad Success</p>
           </a>
           <a href="" class="mb-4 position-relative img-container ml-3 mr-3">
             <img class="img-fluid" src="images/blog-2.png" alt="Blog Post Feature Image 1">
-            <p class="p-4 image-caption text-left position-absolute mb-0 w-100 font-weight-bold text-20 text-proxima text-orange">Learn To Face Difficulty</p>
+            <p class="p-4 image-caption text-left position-absolute mb-0 w-100 font-weight-normal text-20 text-proxima text-orange">How I got a tech career with a communication degree</p>
           </a>
           <a href="" class="mb-4 position-relative img-container ml-3 mr-3">
             <img class="img-fluid" src="images/blog-3.png" alt="Blog Post Feature Image 1">
-            <p class="p-4 image-caption text-left position-absolute mb-0 w-100 font-weight-bold text-20 text-proxima text-orange">Boosting your career with this 5 techniques</p>
+            <p class="p-4 image-caption text-left position-absolute mb-0 w-100 font-weight-normal text-20 text-proxima text-orange">Pros and Cons of #StartUpLife</p>
           </a>
         </div>
 
-        <a href="https://danielleolean.wordpress.com" class="btn btn-lg btn-outline-danger mx-auto read-more-btn btn-block">
+        <a target="_blank" href="https://danielleolean.wordpress.com" class="btn btn-lg btn-outline-danger mx-auto read-more-btn btn-block">
           <span class="mr-1">Read More Posts</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="19" height="12" viewBox="0 0 19 12">
             <path d="M19 6l-7.125-6v3.6C6.531 3.6 2.375 4.8 0 10.8c3.563-3 7.125-3.6 11.875-2.4V12L19 6z"/>
@@ -278,18 +336,22 @@
       </div>
     </section>
 
-    <footer id="footer" class="container">
-      <div class="d-flex justify-content-center justify-content-sm-left flex-wrap social-icons pt-5 pb-5">
-        <a href="https://angel.co/danielle-olean?public_profile=1" class="mr-3">
+    <section id="contact" class="section">
+      <h2 class="text-bold text-center text-subheading mb-5">Contact</h2>
+      <div class="d-flex justify-content-center justify-content-sm-left flex-wrap social-icons">
+        <a target="_blank" href="https://angel.co/danielle-olean?public_profile=1" class="mr-3">
           <img src="images/icon-angellist.svg" alt="Icon Angelist" class="img-fluid" />
         </a>
-        <a href="https://www.linkedin.com/in/dolean1/" class="mr-3">
+        <a target="_blank" href="https://www.linkedin.com/in/dolean1/" class="mr-3">
           <img src="images/icon-linkedin.svg" alt="Icon Linkedin" class="img-fluid" />
         </a>
-        <a href="mailto:danielle.olean@gmail.com">
+        <a target="_blank" href="mailto:danielle.olean@gmail.com">
           <img src="images/icon-mail.svg" alt="Icon Envelope" class="img-fluid" />
         </a>
       </div>
+    </section>
+
+    <footer id="footer" class="container">
       <div class="bg-blue" style="height: 3px;"></div>
       <div class="pt-3 pb-3 d-flex flex-column flex-sm-row justify-content-center justify-content-sm-between flex-wrap">
         <span class="text-center text-sm-center">Copyright &copy; 2018</span>
@@ -298,7 +360,7 @@
           <span>Designed with</span>
           <img class="ml-2 mr-2" src="images/icon-heart.svg" alt="Icon Heart" />
           <span>by &nbsp;</span>
-          <a href="https://www.behance.net/vladislava940a" class="link-orange">Vlada Boiko</a>
+          <a target="_blank" href="https://www.behance.net/vladislava940a" class="link-orange">Vlada Boiko</a>
         </div>
       </div>
     </footer>

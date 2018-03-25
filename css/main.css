@@ -70,6 +70,7 @@ body {
 .img-cover {
   background-size: cover;
   background-position: center center;
+  background-repeat: no-repeat;
 }
 .cta-form {
   background-color: rgba(255, 255, 255, 0.8);
@@ -187,7 +188,7 @@ body {
 @media (min-width: 575px) {
   #testimonials .carousel-item-content {
     max-width: 70%;
-    min-height: 300px;
+    min-height: 350px;
   }
 }
 /* End Testimonials section */
@@ -235,17 +236,22 @@ Blog section
   overflow: hidden;
   cursor: pointer;
 }
+#blog .img-container .img-fluid {
+  transition: all .25s ease-in-out;
+}
+#blog .img-container:hover .img-fluid {
+  transform: scale(1.05, 1.05);
+}
 #blog .img-container:hover .image-caption {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#blog .image-caption {
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 1;
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: 1;
-}
-#blog .image-caption {
-  background-color: rgba(255, 255, 255, 0.8);
-  z-index: 1;
-  bottom: -10px;
   min-height: 110px;
-  opacity: 0;
+  opacity: 1;
   transition: all .25s ease-in-out;
 }
