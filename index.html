@@ -4,70 +4,72 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,600,700" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="fonts/fonts.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css" />
     <title>Danielle Olean</title>
   </head>
-  <body>
-    <section id="hero" class="img-cover" style="background-image: url(images/bg-hero.jpg);">
+  <body class="position-relative" data-spy="scroll" data-target="#header-nav">
+    <section id="hero" class="img-cover" style="background-image: url(images/bg-hero.png);">
       <div class="container h-100 pt-5">
-        <nav class="container navbar navbar-light navbar-expand-lg fixed-top">
-          <a class="navbar-brand py-2" href="#">
-            <img class="img-fluid" src="images/logo@2x.png" style="width: 84px;" alt="Danielle Logo" />
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <header class="site-header fixed-top">
+          <nav class="container navbar navbar-light justify-content-center">
+            <a class="navbar-brand" href="/">
+              <svg class="logo-mobile d-sm-none" xmlns="http://www.w3.org/2000/svg" width="43" height="40" viewBox="0 0 43 40"><path d="M5.12 12.91c0 .134.135.202.407.202.188 0 1.04-.116 2.557-.346 1.516-.231 2.891-.356 4.126-.376-1.38.347-2.568.698-3.561 1.053-.994.356-2.019.75-3.075 1.182-1.056.433-1.814.721-2.275.865-.46.145-.857.217-1.193.217-1.066 0-1.599-.634-1.599-1.903 0-3.269.9-5.566 2.698-6.893.732-.538 1.91-1.177 3.53-1.918 1.62-.74 3.45-1.442 5.49-2.105s4.283-1.235 6.73-1.716a37.539 37.539 0 0 1 7.248-.72c2.447 0 4.695.326 6.745.98 2.05.653 3.765 1.571 5.145 2.754a11.831 11.831 0 0 1 3.185 4.34c.742 1.711 1.114 3.634 1.114 5.768 0 3.25-1.02 6.402-3.06 9.46-2.039 3.056-4.758 5.753-8.156 8.088-3.4 2.336-7.232 4.187-11.5 5.552-4.266 1.365-8.47 2.047-12.612 2.047-.773 0-1.385-.076-1.835-.23a1.543 1.543 0 0 1-.957-.909c-.188-.451-.282-1.12-.282-2.004 0-1.096.094-1.99.282-2.682.189-.692.502-1.49.941-2.394C8.225 25.09 13.464 17.37 20.932 8.065c-1.507.154-3.16.446-4.957.879a70.146 70.146 0 0 0-5.115 1.428c-1.61.519-2.97 1.018-4.078 1.499-1.109.48-1.663.827-1.663 1.039zm23.523-.308c1.036-.493 2.03-.849 2.984-1.066.954-.216 2.065-.312 3.333-.287-.38-1.347-.813-2.332-1.3-2.952-.485-.621-1.212-.957-2.179-1.007-1.184-.062-2.752.406-4.702 1.406-1.95 1-3.902 2.362-5.856 4.087a25.667 25.667 0 0 0-4.936 5.86c-1.336 2.182-2.063 4.392-2.181 6.63-.088 1.666.092 3.13.537 4.391.446 1.262 1.105 2.241 1.976 2.937.872.696 1.9 1.075 3.084 1.137 1.607.084 3.402-.366 5.385-1.351a16.413 16.413 0 0 0 5.178-4.03 26.648 26.648 0 0 0 2.854-4.039 24.071 24.071 0 0 0 1.954-4.26c.476-1.406.743-2.662.802-3.767a4.68 4.68 0 0 0-.315-1.998 3.297 3.297 0 0 0-1.191-1.51c-.547-.384-1.214-.597-2.004-.638a6.548 6.548 0 0 0-1.139.043c-.392.047-.777.11-1.157.186l-1.127.228z"/></svg>
+              <img class="img-fluid logo-desktop logo-black" src="images/logo-black.svg" alt="Danielle Logo" />
+              <img class="img-fluid logo-desktop logo-inverse" src="images/logo-inverse.svg" alt="Danielle Logo" />
+            </a>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav flex-row ml-auto">
+            <ul class="navbar-nav flex-row ml-auto d-none d-md-flex" id="header-nav">
               <li class="nav-item px-3">
-                <a class="nav-link" href="#">ABOUT ME</a>
+                <a class="nav-link" href="#about-me">About</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="#">TESTIMONIALS</a>
+                <a class="nav-link" href="#testimonials">Testimonials</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="#">RESOURCES</a>
+                <a class="nav-link" href="#resources">Resources</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="#">BLOG</a>
-              </li>
-              <li class="nav-item pl-3">
-                <a class="nav-link" href="#">CONTACT</a>
+                <a class="nav-link" href="#blog">Blog</a>
               </li>
             </ul>
-          </div>
-        </nav>
+          </nav>
+        </header>
 
         <div class="d-flex align-items-center justify-content-center h-100 pt-5 flex-column flex-xl-row">
           <h1 class="display-4 mr-xl-5 text-center text-xl-left mb-5 flex-grow">I Drive Growth At<br />Young SaaS Companies</h1>
 
           <form class="cta-form mb-5" style="max-width: 350px;">
-            <p class="text-proxima text-20">Download Your FREE Gantt Chart Template</p>
-            <input type="email" class="form-control form-control-lg mb-5" placeholder="Email" />
-            <button class="btn btn-lg btn-danger btn-block">GET IT NOW!</button>
+            <p class="text-18">FREE Gantt Chart Template</p>
+            <input type="email" class="form-control form-control-lg mb-4" placeholder="Email" />
+            <a href="docs/Gantt-Template.xlsx" download="Gantt-Template" class="btn btn-lg btn-block btn-cta">Download Now</a>
           </form>
         </div>
       </div>
-
     </section>
 
-    <section id="about-me" class="container pt-5 pb-5 mt-5 mb-5">
+    <section id="about-me" class="container section">
       <div class="d-flex flex-column align-items-center mb-5">
         <h2 class="text-center text-bold text-lucida text-subheading mb-0">About Me</h2>
         <div class="subheading-underline text-center"></div>
       </div>
 
       <div class="d-flex flex-column flex-lg-row align-items-center">
-        <div class="flex-no-shrink mr-lg-5 mb-5" style="width: 430px;">
-          <img class="img-fluid" src="images/professional-pic-1.jpg" alt="About Me Picture" />
+        <div class="mr-lg-5 mb-5">
+          <img
+            style="min-width: 250px; border: 10px solid #e7bfc1"
+            class="img-fluid rounded-circle"
+            src="images/dolean-profile.png"
+            srcset="images/dolean-profile@2x.png 2x"
+            alt="About Me Picture"
+          />
         </div>
         <div class="ml-lg-5 mb-5">
-          <h3 class="mb-4 section-subtitle text-bold text-proxima">Who am I?</h3>
-          <p class="text-proxima">
+          <h3 class="mb-4 section-subtitle text-bold ">Who am I?</h3>
+          <p class="">
             Hi, I'm Danielle. I am a technical product manager specializing in <strong>digital products</strong> and <strong>e-commerce</strong>.
             <br /><br />
             I have five years' experience in technical startup and have helped <strong>establish</strong> and <strong>grow</strong> companies <strong>from seed funding to IPOs</strong>.
@@ -78,12 +80,12 @@
       </div>
 
       <div class="d-flex flex-column align-items-center flex-lg-row-reverse">
-        <div class="flex-no-shrink ml-lg-5 mb-5" style="width: 430px;">
-          <img class="img-fluid" src="images/professional-pic-2.jpg" alt="How am I different?" />
+        <div class="ml-lg-5 mb-5 chart-image-container">
+          <img class="img-fluid" src="images/income-growth-chart.svg" alt="How am I different?" />
         </div>
         <div class="mr-lg-5 mb-5">
-          <h3 class="mb-4 section-subtitle text-bold text-proxima">How am I different?</h3>
-          <p class="text-proxima text-18">
+          <h3 class="mb-4 section-subtitle text-bold ">How am I different?</h3>
+          <p class=" text-18">
             My greatest asset is my ability to enthusiastically take on any challenge to <strong>produce impactful results</strong>.
             <br /><br />
             I am a champion of being the voice of the consumer, imagining every possible angle of an approach to a product, gathering customer feedback and pain points, and <strong>executing on ideas from conception to QA</strong>.
@@ -93,13 +95,9 @@
         </div>
       </div>
 
-      <div class="d-flex flex-column flex-lg-row align-items-center">
-        <div class="flex-no-shrink mr-lg-5 mb-5" style="width: 430px;">
-          <img class="img-fluid" src="images/professional-pic-3.jpg" alt="What are my accomplishments?" />
-        </div>
-        <div class="ml-lg-5 mb-5">
-          <h3 class="mb-4 section-subtitle text-bold text-proxima">What are my accomplishments?</h3>
-          <ul class="text-proxima text-18 list-unstyled">
+      <div class="mx-auto" style="max-width: 700px;">
+        <h3 class="mb-4 section-subtitle text-bold text-center">What are my accomplishments?</h3>
+        <ul class=" text-18 list-unstyled">
             <li class="mb-4 d-flex align-items-center">
               <img class="img-fluid mr-3" src="images/checkmark.svg" alt="Checkmark Icon" />
               <p>
@@ -125,30 +123,28 @@
               </p>
             </li>
             </ul>
-        </div>
       </div>
-
     </section>
 
-    <section id="testimonials" class="pt-5 pb-5 bg-blue">
-      <div class="container pt-4 pb-4">
+    <section id="testimonials" class="section bg-blue">
+      <div class="container">
         <h2 class="text-center text-bold text-lucida text-subheading mb-5">Testimonials</h2>
 
-        <div id="testimonials-carousel" class="carousel slide mb-5" data-ride="carousel">
+        <div id="testimonials-carousel" class="carousel slide mb-5 pt-4" data-ride="carousel">
           <ol class="carousel-indicators">
-            <li data-target="#testimonials-carousel" data-slide-to="0" class="active">
+            <li style="max-width: 90px;" data-target="#testimonials-carousel" data-slide-to="0" class="active">
               <img
                 class="d-block img-fluid rounded-circle"
-                src="images/person-1.jpg"
-                srcset="images/person-1@2x.jpg 2x"
+                src="images/oleks-tsukur.jpg"
+                srcset="images/oleks-tsukur.jpg 2x"
                 alt="Person 1"
               />
             </li>
-            <li data-target="#testimonials-carousel" data-slide-to="1">
+            <li style="max-width: 90px;" data-target="#testimonials-carousel" data-slide-to="1">
               <img
                 class="d-block img-fluid rounded-circle"
-                src="images/person-2.jpg"
-                srcset="images/person-2@2x.jpg 2x"
+                src="images/vlada-boiko.jpg"
+                srcset="images/vlada-boiko@2x.jpg 2x"
                 alt="Person 2"
               />
             </li>
@@ -157,7 +153,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="carousel-item-content mx-auto d-flex flex-column justify-content-center">
-                <p class="testimonial-text">Lorem ipsum dolor sit amet, at ipsum lucilius his, ex pro munere percipitur, at eos alia munere deleniti. Nec in everti omittantur. Ei sint munere vix. Ut est possit referrentur, cum eu fabellas philosophia.</p>
+                <p class="testimonial-text">I have a million dollar business because I listened to Danielle. The process she put in place works like a well-oiled money-making machine.</p>
                 <div class="d-flex justify-content-end">
                   <div>
                     <p class="person-name text-proxima text-20 mb-1">Oleks Tsukur</p>
@@ -168,7 +164,7 @@
             </div>
             <div class="carousel-item">
               <div class="carousel-item-content mx-auto d-flex flex-column justify-content-center">
-                <p class="testimonial-text">Lorem ipsum dolor sit amet, at ipsum lucilius his, ex pro munere percipitur, at eos alia munere deleniti. Nec in everti omittantur. Ei sint munere vix. Ut est possit referrentur, cum eu fabellas philosophia. Saperet habemus noluisse eam cu, ea autem option sadipscing vel. Est ne oblique eripuit pertinacia, semper noluisse ei sea.</p>
+                <p class="testimonial-text">My most remarkable work was created when I got in the groove Danielle has created.</p>
                 <div class="d-flex justify-content-end">
                   <div>
                     <p class="person-name text-proxima text-20 mb-1">Vlada Boiko</p>
@@ -179,13 +175,13 @@
             </div>
           </div>
 
-          <a class="carousel-control-prev" href="#testimonials-carousel" role="button" data-slide="prev">
+          <a class="carousel-control-prev d-none d-sm-flex" href="#testimonials-carousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true">
               <img class="img-fluid" src="images/arrow-left.svg" alt="Arrow Left Icon" />
             </span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="carousel-control-next" href="#testimonials-carousel" role="button" data-slide="next">
+          <a class="carousel-control-next d-none d-sm-flex" href="#testimonials-carousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true">
               <img class="img-fluid" src="images/arrow-left.svg" alt="Arrow Right Icon" />
             </span>
@@ -196,25 +192,25 @@
       </div>
     </section>
 
-    <section id="resources" class="pt-5 pb-5">
-      <div class="container pt-4 pb-4">
+    <section id="resources" class="section">
+      <div class="container">
         <h2 class="text-center text-bold text-lucida text-subheading mb-5">Resources</h2>
 
         <div class="d-flex flex-wrap flex-md-nowrap">
           <div class="mb-4 pl-sm-3 pr-sm-3">
-            <h4 class="text-proxima text-20 mb-3">
+            <h4 class=" text-20 mb-3">
               <a href="#">Resource #1</a>
             </h4>
             <p>This is a greate resource to get you started on project managment and stuff. This is a greate resource to get you started on project managment and stuff.</p>
           </div>
           <div class="mb-4 pl-sm-3 pr-sm-3">
-            <h4 class="text-proxima text-20 mb-3">
+            <h4 class=" text-20 mb-3">
               <a href="#">Resource #2</a>
             </h4>
             <p>This is a greate resource to get you started on project managment and stuff. This is a greate resource to get you started on project managment and stuff.</p>
           </div>
           <div class="mb-4 pl-sm-3 pr-sm-3">
-            <h4 class="text-proxima text-20 mb-3">
+            <h4 class=" text-20 mb-3">
               <a href="#">Resource #3</a>
             </h4>
             <p>This is a greate resource to get you started on project managment and stuff. This is a greate resource to get you started on project managment and stuff.</p>
@@ -222,19 +218,19 @@
         </div>
         <div class="d-flex flex-wrap flex-md-nowrap mb-5">
           <div class="mb-4 pl-sm-3 pr-sm-3">
-            <h4 class="text-proxima text-20 mb-3">
+            <h4 class=" text-20 mb-3">
               <a href="#">Resource #4</a>
             </h4>
             <p>This is a greate resource to get you started on project managment and stuff. This is a greate resource to get you started on project managment and stuff.</p>
           </div>
           <div class="mb-4 pl-sm-3 pr-sm-3">
-            <h4 class="text-proxima text-20 mb-3">
+            <h4 class=" text-20 mb-3">
               <a href="#">Resource #5</a>
             </h4>
             <p>This is a greate resource to get you started on project managment and stuff. This is a greate resource to get you started on project managment and stuff.</p>
           </div>
           <div class="mb-4 pl-sm-3 pr-sm-3">
-            <h4 class="text-proxima text-20 mb-3">
+            <h4 class=" text-20 mb-3">
               <a href="#">Resource #6</a>
             </h4>
             <p>This is a greate resource to get you started on project managment and stuff. This is a greate resource to get you started on project managment and stuff.</p>
@@ -250,8 +246,8 @@
       </div>
     </section>
 
-    <section id="blog" class="pt-5 pb-5 bg-blue">
-      <div class="container text-center pt-4 pb-4">
+    <section id="blog" class="section bg-blue">
+      <div class="container text-center">
         <h2 class="text-bold text-lucida text-subheading mb-5">Blog</h2>
 
         <div class="d-inline-flex flex-column flex-md-row mb-5">
@@ -279,23 +275,22 @@
     </section>
 
     <footer id="footer" class="container">
-      <div class="d-flex flex-wrap social-icons pt-5 pb-5">
+      <div class="d-flex justify-content-center justify-content-sm-left flex-wrap social-icons pt-5 pb-5">
         <a href="https://angel.co/danielle-olean?public_profile=1" class="mr-3">
           <img src="images/icon-angellist.svg" alt="Icon Angelist" class="img-fluid" />
         </a>
         <a href="https://www.linkedin.com/in/dolean1/" class="mr-3">
           <img src="images/icon-linkedin.svg" alt="Icon Linkedin" class="img-fluid" />
         </a>
-        <a href="mailto:danielle.olean@gmail.com" class="mr-3">
+        <a href="mailto:danielle.olean@gmail.com">
           <img src="images/icon-mail.svg" alt="Icon Envelope" class="img-fluid" />
         </a>
       </div>
       <div class="bg-blue" style="height: 3px;"></div>
-      <div class="pt-3 pb-3 d-flex flex-wrap">
-        <div class="mr-auto pr-3">
-          Copyright &copy; 2018
-        </div>
-        <div class="d-flex align-items-center">
+      <div class="pt-3 pb-3 d-flex flex-column flex-sm-row justify-content-center justify-content-sm-between flex-wrap">
+        <span class="text-center text-sm-center">Copyright &copy; 2018</span>
+        <div class="pb-3 d-sm-none"></div>
+        <div class="d-flex align-items-center justify-content-center justify-content-sm-right">
           <span>Designed with</span>
           <img class="ml-2 mr-2" src="images/icon-heart.svg" alt="Icon Heart" />
           <span>by &nbsp;</span>
@@ -308,5 +303,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
