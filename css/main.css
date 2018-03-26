@@ -1,6 +1,7 @@
 /* Hero section */
 body {
   font-family: 'Open Sans', sans-serif;
+  line-height: 1.8;
 }
 /* ======================================
 * Header Navigation
@@ -67,6 +68,9 @@ body {
   height: 700px;
   min-height: 90vh;
 }
+#hero .form-control {
+  border-radius: 2px;
+}
 .img-cover {
   background-size: cover;
   background-position: center center;
@@ -124,9 +128,6 @@ body {
 .text-18 {
   font-size: 18px;
 }
-.text-bold {
-  font-weight: bold;
-}
 .text-subheading {
   font-size: 40px;
 }
@@ -177,15 +178,18 @@ body {
   bottom: -120px;
 }
 #testimonials .carousel-indicators li {
+  margin: 0 8px;
   height: auto;
   text-indent: initial;
   width: auto;
   border: 5px solid #fcfcfc;
   border-radius: 50%;
+  opacity: 0.5;
   transition: all 0.2s ease-in-out;
 }
 #testimonials .carousel-indicators li.active {
-  border-color: #e7bfc1;
+  border-color: rgba(239, 90, 48, 0.2);
+  opacity: 1;
 }
 @media (min-width: 575px) {
   #testimonials .carousel-item-content {
