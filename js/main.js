@@ -22,18 +22,34 @@ jQuery(function($) {
   var $emailErrorMessage = $form.find('.email-error-message');
   var $ctaBtn = $form.find('.btn-cta');
 
-  $form.submit(function(event){
+  $form.submit(onSubmit);
+  $emailInput.on('input', updateBtn);
+
+  function onSubmit(event) {
     event.preventDefault();
     var emailValue = $emailInput.val();
-
     if( isEmail(emailValue) ) { // valid email
       $emailErrorMessage.addClass('d-none');
+      console.log('email:', emailValue);
+    } else {
+      $emailErrorMessage.removeClass('d-none');
+    }
+  }
+  function updateBtn() {
+    var emailValue = $emailInput.val();
+    if( isEmail(emailValue) ) { // valid email
       $ctaBtn.removeClass('disabled');
     } else { // invalid email
-      $emailErrorMessage.removeClass('d-none');
       $ctaBtn.addClass('disabled');
     }
-  });
+    if( emailValue.length ) {
+      $emailErrorMessage.addClass('d-none');
+    }
+  }
+
+  $ctaBtn.click(function() {
+    $form.submit();
+  })
 });
 
 $(function() {
