@@ -22,8 +22,10 @@ jQuery(function($) {
   var $emailErrorMessage = $form.find('.email-error-message');
   var $ctaBtn = $form.find('.btn-cta');
 
+  // bind events
   $form.submit(onSubmit);
   $emailInput.on('input', updateBtn);
+  $('.navbar-brand').on('click', onLogoClick);
 
   function onSubmit(event) {
     event.preventDefault();
@@ -46,7 +48,10 @@ jQuery(function($) {
       $emailErrorMessage.addClass('d-none');
     }
   }
-
+  function onLogoClick(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, 400);
+  }
   $ctaBtn.click(function() {
     $form.submit();
   })
